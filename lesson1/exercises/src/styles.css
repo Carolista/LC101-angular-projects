@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+p, li {
+    font-family: 'Harmattan', sans-serif;
+    font-size: 1.4em;
+    line-height: .9em;
+    margin: .5em auto;
+    /* font-family: 'Share Tech', sans-serif; */
+    /* font-family: 'Shanti', sans-serif; */
+    /* font-family: 'Arya', sans-serif; */
+    /* font-family: 'Chau Philomene One', sans-serif; */
+}
+
+li:first-child {
+    margin-top: 0;
+}
+
+h1, h3 {
+    font-family: 'Notable', sans-serif;
+}
+
+h3 {
+    margin: 0 auto 20px auto;
+    font-size: 3.6vw;
+}
