@@ -1,11 +1,9 @@
 div.movies {
     color: #4c8813;
+    padding: 10px;
+    margin: 0px auto;
 }
 
 h3 {
     text-align: center;
-}
-
-li {
-    font-size: 12pt;
 }

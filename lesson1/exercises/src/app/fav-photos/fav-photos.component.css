@@ -1,12 +1,13 @@
-h3 {
+div.photos {
     color: brown;
+    text-align: center;
+    width: auto;
+    padding-top: 10px;
+    margin: 0px auto;
 }
 
 img {
-    width: 350px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.photos {
-    text-align: center;
-}

@@ -1,0 +1,26 @@
+.titleBar {
+    width: 100vw;
+    height: 12vw;
+    padding: 20px;
+    background-color: black;
+}
+
+.mainArea {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.linkBar {
+    width: 100vw;
+    padding: 10px;
+}
+
+.middle {
+    width: 40vw;
+}
+
+.side {
+    width: auto;
+}
+
