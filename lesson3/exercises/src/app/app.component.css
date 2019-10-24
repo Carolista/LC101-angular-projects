@@ -1,7 +1,14 @@
+
+
 /* HEADER */
 
 .container-header {
+    /* margin: 40px 10px 0px; */
     text-align: center;
+}
+
+.h2 {
+    font-family: 'Abel', sans-serif;
 }
 
 
@@ -11,11 +18,19 @@
     text-align: center; 
     height: 400px; 
     width: 100%;
+    padding: 15px 10px;
+    /* margin: 0px 10px; */
 }
 
 .container-left {
-    text-align: center; 
+    text-align: left; 
+    color: white;
     display: inline-block;
+    width: 100%;
+}
+
+.container-left > p {
+    font-size: 11pt;
 }
 
 .shuttle-background {
@@ -30,12 +45,15 @@ img {
 }
 
 .container-right {
-    text-align: center; 
+    color: white;
+    text-align: right; 
     display: inline-block;
+    width: 100%;
 }
 
 .container-right > p { 
     display: inline-block;
+    font-size: 11pt;
 }
 
 
@@ -62,4 +80,9 @@ button.directional {
 /* just using VSC tool to pick colors easily for use in TS file */
 .test {
     color: #f18724
+}
+
+
+.special {
+    font-family: 'Gugi', cursive;
 }
