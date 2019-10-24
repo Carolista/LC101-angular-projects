@@ -23,21 +23,22 @@
 
         <div class="col-3">
             <div class="container-right"b>
-                <div *ngIf = "!takeOffEnabled">
-                    <button (click) = "moveRocket(shuttleBkg,'up')" [disabled] = "topMax">Up</button>
-                    <button (click) = "moveRocket(shuttleBkg,'down')" [disabled] = "bottomMax">Down</button>
-                    <button (click) = "moveRocket(shuttleBkg,'right')" [disabled] = "rightMax">Right</button>
-                    <button (click) = "moveRocket(shuttleBkg,'left')" [disabled] = "leftMax">Left</button>
-                </div>
+
                 <h3>Space Shuttle Height</h3>
                 <p>{{shuttleHeight}} km</p>
                 
             </div>
         </div>
     </div>
-    <div class="container-control-buttons">
-        <button (click) = "takeOff(); takeOffEnabled = !takeOffEnabled" [disabled] = "!takeOffEnabled">Take Off</button>
-        <button (click) = "land(); takeOffEnabled = !takeOffEnabled" [disabled] = "takeOffEnabled">Land</button>
-        <button (click) = "abort(); takeOffEnabled = !takeOffEnabled" [disabled] = "takeOffEnabled">Abort Mission</button>
+    <div class="container-buttons">
+        <button class = "control" (click) = "takeOff(); takeOffEnabled = !takeOffEnabled" [disabled] = "!takeOffEnabled">Take Off</button>
+        <button class = "control" (click) = "land(); takeOffEnabled = !takeOffEnabled" [disabled] = "takeOffEnabled">Land</button>
+        <button class = "control" (click) = "abort(); takeOffEnabled = !takeOffEnabled" [disabled] = "takeOffEnabled">Abort Mission</button>
+    </div>
+    <div class = "container-buttons" *ngIf = "!takeOffEnabled">
+        <button class = "directional" (click) = "moveRocket(shuttleBkg,'up')" [disabled] = "topMax">Up</button><br>
+        <button class = "directional" (click) = "moveRocket(shuttleBkg,'left')" [disabled] = "leftMax">Left</button>
+        <button class = "directional" (click) = "moveRocket(shuttleBkg,'right')" [disabled] = "rightMax">Right</button><br>
+        <button class = "directional" (click) = "moveRocket(shuttleBkg,'down')" [disabled] = "bottomMax">Down</button>
     </div>
 </div>

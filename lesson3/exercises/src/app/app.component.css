@@ -1,11 +1,16 @@
+/* HEADER */
+
+.container-header {
+    text-align: center;
+}
+
+
+/* CORE */
+
 .justify-content-center {
     text-align: center; 
     height: 400px; 
     width: 100%;
-}
-
-.container-header {
-    text-align: center;
 }
 
 .container-left {
@@ -33,10 +38,28 @@ img {
     display: inline-block;
 }
 
-.container-control-buttons {
+
+/* BUTTONS */
+
+.container-buttons {
     text-align: center;
 }
 
+button.control {
+    /* border: 2px; */
+    border-radius: 8px;
+    width: 120px;
+    margin-top: 10px;
+}
+button.directional {
+    /* border: 2px; */
+    border-radius: 8px;
+    width: 60px;
+    margin: 10px 10px 0px 10px;
+}
+
+
+/* just using VSC tool to pick colors easily for use in TS file */
 .test {
     color: #f18724
 }
