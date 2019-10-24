@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
     title = 'Exercises: Angular Lesson 3';
+    takeOffEnabled = true;
 
     // Top section readout
     message = 'Space shuttle ready for takeoff!';
@@ -20,24 +21,26 @@ export class AppComponent {
     xPos = "0px"; // for moving left and right
     yPos = "0px"; // for moving up and down
 
-    moveRocket(direction): any {
+    moveRocket(shuttleBkg, direction): any {
         if (direction === "right") {
-            // if 
-            let movement = parseInt(this.xPos) + 10 + 'px';
-            this.xPos = movement;
+            // if (parseInt(this.xPos) < shuttleBkg.style.width) {
+                let movement = parseInt(this.xPos) + 10 + 'px';
+                this.xPos = movement;
+            // }
         } else if (direction === "left") {
             if (parseInt(this.xPos) >= 10) {
                 let movement = parseInt(this.xPos) - 10 + 'px';
                 this.xPos = movement;
             }
         } else if (direction === "up") {
-            let movement = parseInt(this.yPos) + 10 + 'px';
-            // if (this.yPos < ... // shuttle background height
-            this.yPos = movement;
-            this.shuttleHeight = 10000;
+            // if (parseInt(this.yPos) < shuttleBkg.style.height) {
+                let movement = parseInt(this.yPos) + 10 + 'px';
+                this.yPos = movement;
+                this.shuttleHeight = 10000;
+            // }
         } else if (direction === "down") {
-            let movement = parseInt(this.yPos) - 10 + 'px';
             if (parseInt(this.yPos) >= 10) {
+                let movement = parseInt(this.yPos) - 10 + 'px';
                 this.yPos = movement;
                 this.shuttleHeight = 0;
             }
