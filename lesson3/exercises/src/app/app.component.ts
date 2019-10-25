@@ -62,8 +62,7 @@ export class AppComponent {
             } else {
                 let movement = parseInt(this.yPos) + 10 + 'px';
                 this.yPos = movement;
-                this.shuttleHeight = 10000;
-                this.fieldColor = this.flightColor;
+                this.shuttleHeight += 1000;                this.fieldColor = this.flightColor;
                 this.bottomMax = false;
             }
         } else if (direction === "down") {
@@ -73,7 +72,7 @@ export class AppComponent {
             } else {
                 let movement = parseInt(this.yPos) - 10 + 'px';
                 this.yPos = movement;
-                this.shuttleHeight = 0;
+                this.shuttleHeight -= 1000;
                 this.fieldColor = this.flightColor;
                 this.topMax = false;
             }
@@ -87,7 +86,7 @@ export class AppComponent {
             this.fuelStatus = "Full burn"
             this.chat = "What an amazing view!"
             this.fieldColor = this.flightColor;
-            this.shuttleHeight = 10000;
+            // this.shuttleHeight = 10000;
         }
     }
 
@@ -112,6 +111,14 @@ export class AppComponent {
             this.fieldColor = this.abortColor;
             this.shuttleHeight = 0;
             this.yPos = "0px";
+        }
+    }
+
+    isVisible(): any {
+        if (this.takeOffEnabled) {
+            return "hidden";
+        } else {
+            return "visible";
         }
     }
 
