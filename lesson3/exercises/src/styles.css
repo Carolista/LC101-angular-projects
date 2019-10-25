@@ -3,6 +3,10 @@ h1 {
     text-align: center;
 }
 
-/* body {
-    padding: 20px;
-} */
+h2 {
+    font-family: 'Codystar', sans-serif;
+}
+
+body {
+    padding-top: 30px;
+}

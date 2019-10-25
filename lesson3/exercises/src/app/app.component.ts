@@ -14,10 +14,10 @@ export class AppComponent {
     topMax = false;
     bottomMax = true;
 
-    // Top section readout
-    message = 'Space shuttle ready for takeoff!';
-
-    // Right section readout
+    // Readouts
+    message = "READY FOR LIFTOFF";
+    fuelStatus = "Full tank";
+    chat = "Houston, we are ready when you are!";
     shuttleHeight = 0;
 
     // Graphic field
@@ -83,7 +83,9 @@ export class AppComponent {
     takeOff(): any {
         confirm("Confirm that the shuttle is ready for takeoff.");
         if (true) {
-            this.message = "Shuttle in flight.";
+            this.message = "SHUTTLE IN FLIGHT";
+            this.fuelStatus = "Full burn"
+            this.chat = "What an amazing view!"
             this.fieldColor = this.flightColor;
             this.shuttleHeight = 10000;
         }
@@ -92,7 +94,9 @@ export class AppComponent {
     land(): any {
         alert("The shuttle is landing. Landing gear engaged.");
         if (true) {
-            this.message = "Shuttle has landed.";
+            this.message = "SHUTTLE HAS LANDED";
+            this.fuelStatus = "Fuel replaced"
+            this.chat = "Can we go again?"
             this.fieldColor = this.landColor;
             this.shuttleHeight = 0;
             this.yPos = "0px";
@@ -102,7 +106,9 @@ export class AppComponent {
     abort(): any {
         confirm("Please confirm that you wish to abort the mission.");
         if (true) {
-            this.message = "Mission aborted.";
+            this.message = "MISSION ABORTED";
+            this.fuelStatus = "Full tank"
+            this.chat = "(Disappointed sigh)"
             this.fieldColor = this.abortColor;
             this.shuttleHeight = 0;
             this.yPos = "0px";
