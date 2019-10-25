@@ -7,6 +7,12 @@ h2 {
     font-family: 'Codystar', sans-serif;
 }
 
+h4 {
+    font-size: 20pt;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
 body {
     padding-top: 30px;
 }

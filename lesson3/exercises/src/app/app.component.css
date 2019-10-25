@@ -27,7 +27,8 @@
 }
 
 .container-left > p {
-    font-size: 11pt;
+    font-size: 13pt;
+    font-family: 'Abel', sans-serif;
 }
 
 .shuttle-background {
@@ -49,8 +50,8 @@ img {
 }
 
 .container-right > p { 
-    display: inline-block;
-    font-size: 11pt;
+    font-size: 13pt;
+    font-family: 'Abel', sans-serif;
 }
 
 
